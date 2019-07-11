@@ -1,7 +1,0 @@
-Python > 3.7
-numpy 1.16.4 pip install numpy
-scipy 1.3.0 pip install scipy
-Pydicom 1.2.2 pip install pydicom
-opencv-python 4.1.0.25  pip install opencv-python
-SimpleITK 1.2.0 pip install SimpleITK
-sklearn2 0.0.13 pip install sklearn2
