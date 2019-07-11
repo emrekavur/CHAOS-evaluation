@@ -9,10 +9,10 @@ This repo contains evaluation metrics of CHAOS challenge. The evaluation metrics
 
 For further information about metrics, you may visit [https://chaos.grand-challenge.org/Evaluation/](https://chaos.grand-challenge.org/Evaluation/)
 
-The evaluation code is shared with sample submission. Evaluation of CHAOS is handled via MATLAB language. Also, Python version of the code is prepared since Python is a kind of standard language for scientific programming. In this repo, there are both MATLAB and Python versions are shared.
+The evaluation code is shared with sample submission. Evaluation of CHAOS is handled via MATLAB language. Also, Python version of the code is prepared since Python is a kind of standard language for scientific programming. In this repo, both MATLAB and Python versions are shared.
 
 ## Files and Folders
-We provide a sample evaluation code for an example segmentation submission. Besides, we prepared a mini-experiment to compare metrics (only in MATLAB).
+We provide an exapmle evaluation code for sample segmentation submission. Besides, we prepared a mini-experiment to compare metrics (only in MATLAB).
 
 |File or Folder                    |Explanation
 |----------------|-------------------------|
@@ -23,18 +23,18 @@ We provide a sample evaluation code for an example segmentation submission. Besi
 |Python\ `example.py`  |A sample submission evaluation code via Python|
 
 ## MATLAB Version
-We are sharing two example evaluation.
+There are two example code.
 
-1) Evaluation of a sample submission (`example3D.m`)
+1) Evaluation of sample submission (`example3D.m`)
 
-There is an evaluation of a sample submission in Data_3D\Segmentation. The segmented and reference data are stored in series of PNG files. They are imported as 3D volumes. DICOM files are used for their header info which is used for transforming voxel values into real-world values. Just running of `example3D.m` file is enough to perform the evaluation.
+This is an evaluation of a sample submission placed in Data_3D\Segmentation. The segmented and reference data are stored in series of PNG files. They are imported as 3D volumes. DICOM files are used for their header info which is used for transforming voxel values into real-world values. Just running of `example3D.m` file is enough to perform the evaluation. (natsort.m and natsortfiles.m files are used to import files in right order. https://uk.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort)
 
-2) Comparison of metrics under different artefacts (`example2D_metric_compare.m`)
+2) Comparison of metrics with different artefacts (`example2D_metric_compare.m`)
 
-*In CHAOS challenge, we have received many questions about why we are using multiple metrics instead of using just a single metric (such as DICE as many papers in literature). This mini-experiment is designed to analyze the output of evaluation metrics under different segmentation artifacts. As it can be observed from metric results, each metric has advantages and disadvantages about determining particular cases. Also, DICE does not generate significant results in many cases. We hope that this experiment clarifies some questions about usage of multiple metrics.*
+*In CHAOS challenge, we have received many questions about why we are using multiple metrics instead of using just a single metric (such as DICE as many papers in literature). This mini-experiment was designed to analyze the output of evaluation metrics under different segmentation artifacts. There are reference data(ref.png), an original sgmentation(seg1.png) and some modified versions of seg1.png with different kind of artefacts(seg2.png ... seg7.png). As it can be observed from metric results, each metric has advantages and disadvantages about determining particular errors in segmented volumes. Also, DICE does not generate significant results in many cases. We hope that this experiment clarifies some questions about usage of multiple metrics.*
 
 ## Python Version
-We also re-wrote the code in Python because of high demands from many scientist. `example.py` and `CHAOSMetrics.py` files are Python implementation of `example.m` and `CHAOSMetrics.m` files.
+We also implemented the code in Python because of high demands from many scientist. `example.py` and `CHAOSMetrics.py` files are Python implementation of `example.m` and `CHAOSMetrics.m` files.
 
 ### Requirements
 The evaluation code tested with Python 3.7 and it needs the libraries below (with used versions)
