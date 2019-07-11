@@ -9,7 +9,7 @@ This repo contains evaluation metrics of CHAOS challenge. The evaluation metrics
 
 For further information about metrics, you may visit [https://chaos.grand-challenge.org/Evaluation/](https://chaos.grand-challenge.org/Evaluation/)
 
-The evaluation code is shared with sample submission. Evaluation of CHAOS is handled via MATLAB language. Also, Python version of the code is prepared since Python is a kind of standard language for scientific programming. In this repo, both MATLAB and Python versions are shared.
+The evaluation code is shared with sample submission. Evaluation of CHAOS is handled via MATLAB language. Also, Python version of the code is prepared since Python is a kind of standard language for scientific programming.
 
 ## Files and Folders
 We provide an example evaluation code for sample segmentation submission. Besides, we prepared a mini-experiment to compare metrics (only in MATLAB).
@@ -27,7 +27,9 @@ There are two example code.
 
 1) Evaluation of sample submission (`example3D.m`)
 
-This is an evaluation of a sample submission placed in Data_3D\Segmentation. The segmented and reference data are stored in series of PNG files. They are imported as 3D volumes. DICOM files are used for their header info which is used for transforming voxel values into real-world values. Just running of `example3D.m` file is enough to perform the evaluation. (natsort.m and natsortfiles.m files are used to import files in right order. https://uk.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort)
+This is an evaluation of a sample submission placed in Data_3D\Segmentation. The segmented and reference data are stored in series of PNG files. They are imported as 3D volumes. DICOM files are used for their header info which is used for transforming voxel values into real-world values. 
+
+The script is ready for use. After downloading repo, just running of `example3D.m` file is enough to perform the evaluation. (`natsort.m` and `natsortfiles.m` files are used to import files in right order. https://uk.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort)
 
 2) Comparison of metrics with different artefacts (`example2D_metric_compare.m`)
 
@@ -57,10 +59,11 @@ You may install them using PyPI with the commands below:
 
 > **Important note:** 3D erosion algorithms in *MATLAB* and *scipy.ndimage* library in Python generate slightly different results. Hence, the results of ASSD and MSSD metrics are calculated slightly different.
 
+After downloading repo and installing necessary libraries, you may run `example.py` file to perform the evaluation.
+
 # Contact
 If you have a question, please consider looking web page of CHAOS:  [https://chaos.grand-challenge.org/News_and_FAQ/](https://chaos.grand-challenge.org/News_and_FAQ/). 
 
-If you cannot find the answer, you may contact with us: [https://chaos.grand-challenge.org/Contact/](https://chaos.grand-challenge.org/Contact/)
-
+If you cannot find the answer, you may contact with us: emrekavur@gmail.com
 
 
