@@ -9,7 +9,7 @@ This repo contains evaluation metrics of CHAOS challenge. The evaluation metrics
 
 For further information about metrics, you may visit [https://chaos.grand-challenge.org/Evaluation/](https://chaos.grand-challenge.org/Evaluation/)
 
-The evaluation code is shared with sample submission. Evaluation of CHAOS is handled via MATLAB language. Also, Python version of the code is prepared since Python is a kind of standard language for scientific programming.
+The evaluation code is shared with sample submission. Evaluation of CHAOS is handled via MATLAB language. In addition, Python version of the code is prepared.
 
 ## Files and Folders
 We provide an example evaluation code for sample segmentation submission. Besides, we prepared a mini-experiment to compare metrics (only in MATLAB).
