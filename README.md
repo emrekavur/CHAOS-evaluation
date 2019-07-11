@@ -37,7 +37,7 @@ This is an evaluation of a sample submission placed in Data_3D\Segmentation. The
 We also implemented the code in Python because of high demands from many scientist. `example.py` and `CHAOSMetrics.py` files are Python implementation of `example.m` and `CHAOSMetrics.m` files.
 
 ### Requirements
-The evaluation code tested with Python 3.7 and it needs the libraries below (with used versions)
+The evaluation code written in Python 3.7 an it needs the libraries below. (They are presented with used versions.)
 
  - numpy (1.16.4)
  - scipy (1.3.0)
@@ -59,6 +59,7 @@ You may install them using PyPI with the commands below:
 
 # Contact
 If you have a question, please consider looking web page of CHAOS:  [https://chaos.grand-challenge.org/News_and_FAQ/](https://chaos.grand-challenge.org/News_and_FAQ/). 
+
 If you cannot find the answer, you may contact with us: [https://chaos.grand-challenge.org/Contact/](https://chaos.grand-challenge.org/Contact/)
 
 
