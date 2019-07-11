@@ -1,5 +1,5 @@
 # CHAOS-evaluation
-Evaluation metrics of CHAOS challenge.  The evaluation code is shared with an example. The evaluation metrics are; 
+This repo contains evaluation metrics of CHAOS challenge. The evaluation metrics are; 
 
  1. Sørensen–Dice coefficient (DICE) 
  2. Relative absolute volume difference (RAVD)
@@ -8,7 +8,7 @@ Evaluation metrics of CHAOS challenge.  The evaluation code is shared with an ex
 
 For further information about metrics, you may visit [https://chaos.grand-challenge.org/Evaluation/](https://chaos.grand-challenge.org/Evaluation/)
 
-Evaluation of CHAOS is handled via MATLAB language. Also Python version of the code is prepared since Python is a kind of standard language for scientific programming. In this repo, there are both MATLAB and Python versions are shared.
+The evaluation code is shared with a sample submission. Evaluation of CHAOS is handled via MATLAB language. Also Python version of the code is prepared since Python is a kind of standard language for scientific programming. In this repo, there are both MATLAB and Python versions are shared.
 
 ## Files and Folders
 We provide a sample evaluation code for an example segmentation submission. In addition, we prepared a mini-experiment to compare metrics (only in Matlab).
@@ -29,43 +29,12 @@ We are sharing two example evaluation.
  1. Evaluation of a sample submission (`example3D.m`).
  Here is an evaluation of a sample submission in Data_3D\Segmentation. The segmented and reference data in series of PNG files. They are imported as 3D volumes. DICOM files are used for their header info which is used for transforming voxel values into real world values. Just running of `example3D.m` file is enough to perform evaluation.
 
-```mermaid
-graph LR
-X[example3D.m] --> A
-A[Data_3D] --> B[DICOM_Anon]
-A --> C[Ground]
-A --> D[Segmentation]
-B --> E[CHAOSMetrics.m]
-C --> E
-D --> E
-E --> F[Results]
-```
 2. Comparison of metrics under different artefacts (`example2D_metric_compare.m`).
 *In CHAOS challenge, we have received many questions about why we are using multiple metrics instead of using just  a single metric (such as DICE) as many papers in literature. This mini-experiment is designed to analyze the output of evaluation metrics under different segmentation artefacts. As it can be observed from metric results, each metric has advantages and disadvantages about determining particular cases. Also DICE does not generates significant results in many cases. We hope that this experiment clarifies some questions about usage of multiple metrics.*
 
-```mermaid
-graph LR
-X[example2D_metric_compare.m] --> A
-A[Data_2D] --> C[Ground]
-A --> D[Segmentation]
-C --> E[CHAOSMetrics.m]
-D --> E
-E --> F[Results]
-```
 ## Python Version
 We also re-write the code in Python because of high demand from many scientist. `example.py` and `CHAOSMetrics.py` files are Python implementation of `example.m`and `CHAOSMetrics.m` files.
 
-```mermaid
-graph LR
-X[example.py] --> A
-A[Data_3D] --> B[DICOM_Anon]
-A --> C[Ground]
-A --> D[Segmentation]
-B --> E[CHAOSMetrics.py]
-C --> E
-D --> E
-E --> F[Results]
-```
 ### Requirements
 The evaluation code tested with Python 3.7 and it needs the libraries below
 
