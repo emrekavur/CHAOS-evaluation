@@ -7,10 +7,10 @@
 
 function [realPoints]=transformToRealCoordinates(indexPoints,dicomDir)
 
-files=dir([dicomDir '\*.dcm']);
-info1=dicominfo([files(1).folder '\' files(1).name]);
+files=dir([dicomDir filesep '*.dcm']);
+info1=dicominfo([files(1).folder filesep files(1).name]);
 N=size(files,1);
-infoN=dicominfo([files(N).folder '\' files(N).name]);
+infoN=dicominfo([files(N).folder filesep files(N).name]);
 
 T1=info1.ImagePositionPatient;
 TN=infoN.ImagePositionPatient;
