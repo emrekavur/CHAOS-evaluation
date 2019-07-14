@@ -31,6 +31,9 @@ This is an evaluation of a sample submission placed in Data_3D\Segmentation. The
 
 The script is ready for use. After downloading repo, just running of `example3D.m` file is enough to perform the evaluation. (`natsort.m` and `natsortfiles.m` files are used to import files in right order. https://uk.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort)
 
+After evaluation the result will be:
+> DICE=0.978 RAVD=0.665 ASSD=0.734 MSSD=14.000
+
 2) Comparison of metrics with different artefacts (`example2D_metric_compare.m`)
 
 *In CHAOS challenge, we have received many questions about why we are using multiple metrics instead of using just a single metric (such as DICE as many papers in literature). This mini-experiment was designed to analyze the output of evaluation metrics under different segmentation artifacts. There are reference data(ref.png), an original sgmentation(seg1.png) and some modified versions of seg1.png with different kind of artefacts(seg2.png ... seg7.png). As it can be observed from metric results, each metric has advantages and disadvantages about determining particular errors in segmented volumes. Also, DICE does not generate significant results in many cases. We hope that this experiment clarifies some questions about usage of multiple metrics.*
@@ -59,7 +62,9 @@ You may install them using PyPI with the commands below:
 
 > **Important note:** 3D erosion algorithms in *MATLAB* and *scipy.ndimage* library in Python generate slightly different results. Hence, the results of ASSD and MSSD metrics are calculated slightly different.
 
-After downloading repo and installing necessary libraries, you may run `example.py` file to perform the evaluation.
+After downloading repo and installing necessary libraries, you may run `example.py` file to perform the evaluation. The result will be:
+
+> DICE=0.978 RAVD=0.665 ASSD=0.713 MSSD=14.000
 
 # Contact
 If you have a question, please consider looking web page of CHAOS:  [https://chaos.grand-challenge.org/News_and_FAQ/](https://chaos.grand-challenge.org/News_and_FAQ/). 
