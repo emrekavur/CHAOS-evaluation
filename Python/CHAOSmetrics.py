@@ -11,7 +11,6 @@ import cv2
 import SimpleITK as sitk
 from scipy import ndimage
 from sklearn.neighbors import KDTree
-from skimage.morphology import binary_erosion
 
 def evaluate(Vref,Vseg,dicom_dir):
     dice=DICE(Vref,Vseg)
