@@ -32,6 +32,7 @@ This is an evaluation of a sample submission placed in Data_3D\Segmentation. The
 The script is ready for use. After downloading repo, just running of `example3D.m` file is enough to perform the evaluation. (`natsort.m` and `natsortfiles.m` files are used to import files in right order. https://uk.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort)
 
 After evaluation the result will be:
+
     DICE=0.978 RAVD=0.665 ASSD=0.734 MSSD=14
 
 2) Comparison of metrics with different artefacts (`example2D_metric_compare.m`)
@@ -63,6 +64,7 @@ You may install them using PyPI with the commands below:
 > **Important note:** 3D erosion algorithms in *MATLAB* and *scipy.ndimage* library in Python generate slightly different results. Hence, the results of ASSD and MSSD metrics are calculated slightly different.
 
 After downloading repo and installing necessary libraries, you may run `example.py` file to perform the evaluation. The result will be:
+
     DICE=0.978 RAVD=0.665 ASSD=0.713 MSSD=14
     
 # Contact
