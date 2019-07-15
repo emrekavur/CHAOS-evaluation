@@ -24,14 +24,14 @@ We provide an example evaluation code for sample segmentation submission. Beside
 |Julia\ `evaluate3D.jl`  |A sample submission evaluation code via Julia|
 
 ## MATLAB Version
-There are two evaluation codes. Both 
+There are two evaluation codes.
 
 ### Requirements
 The evaluation codes were written and tested with MATLAB R2018a. `Image Processing Toolbox` is necessary to run. 
 
-1) Evaluation of sample submission (`evaluate3D.m`)
+1. Evaluation of sample submission (`evaluate3D.m`)
 
-This is an evaluation of a sample submission placed in Data_3D\Segmentation. The segmented and reference data are stored in series of PNG files. They are imported as 3D volumes. DICOM files are used for their header info which is used for transforming voxel values into real-world values. 
+This is an evaluation of a sample submission placed in Data_3D\Segmentation. The segmented and reference data are stored in series of PNG files. They are imported as 3D volumes. DICOM files are used for their header info which is necessary for transforming voxel values into real-world values. 
 
 The script is ready for use. After downloading repo, just running of `evaluate3D.m` file is enough to perform the evaluation. (`natsort.m` and `natsortfiles.m` files are used to import files in right order. https://uk.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort)
 
@@ -39,7 +39,7 @@ After evaluation the result will be:
 
     DICE=0.978 RAVD=0.665 ASSD=0.734 MSSD=14
 
-2) Comparison of metrics with different artefacts (`evaluate2D_metric_compare.m`)
+2. Comparison of metrics with different artefacts (`evaluate2D_metric_compare.m`)
 
 *In CHAOS challenge, we have received many questions about why we are using multiple metrics instead of using just a single metric (such as DICE as many papers in literature). This mini-experiment was designed to analyze the output of evaluation metrics under different segmentation artifacts. There are reference data(ref.png), an original sgmentation(seg1.png) and some modified versions of seg1.png with different kind of artefacts(seg2.png ... seg7.png). As it can be observed from metric results, each metric has advantages and disadvantages about determining particular errors in segmented volumes. Also, DICE does not generate significant results in many cases. We hope that this experiment clarifies some questions about usage of multiple metrics.*
 
