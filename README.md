@@ -41,13 +41,14 @@ After evaluation the result will be:
 
 2. Comparison of metrics with different artefacts (`evaluate2D_metric_compare.m`)
 
-*In CHAOS challenge, we have received many questions about why we are using multiple metrics instead of using just a single metric (such as DICE as many papers in literature). This mini-experiment was designed to analyze the output of evaluation metrics under different segmentation artifacts. There are reference data(ref.png), an original sgmentation(seg1.png) and some modified versions of seg1.png with different kind of artefacts(seg2.png ... seg7.png). As it can be observed from metric results, each metric has advantages and disadvantages about determining particular errors in segmented volumes. Also, DICE does not generate significant results in many cases. We hope that this experiment clarifies some questions about usage of multiple metrics.*
+In CHAOS challenge, we have received many questions about why we are using multiple metrics instead of using just a single metric *(such as DICE as many papers in literature)*. This mini-experiment was designed to analyze the output of evaluation metrics under different segmentation artifacts. There are reference data(ref.png), an original sgmentation(seg1.png) and some modified versions of seg1.png with different kind of artefacts(seg2.png ... seg7.png). As it can be observed from metric results, each metric has advantages and disadvantages about determining particular errors in segmented volumes. Also, DICE does not generate significant results in many cases. We hope that this experiment clarifies some questions about usage of multiple metrics.
 
 ## Python Version
 We have implemented the evaluation code in Python because of high demands from many scientist. `evaluate3D.py` and `CHAOSMetrics.py` files are Python implementation of `evaluate3D.m` and `CHAOSMetrics.m` files.
 
 ### Requirements
 The evaluation code was written and tested with Python 3.7 and it needs the libraries below:
+
 (They are presented with used versions.)
 
  - numpy (1.16.4)
@@ -77,6 +78,7 @@ Julia is a high-level general-purpose dynamic programming language designed for 
 
 ### Requirements
 The evaluation code was written and tested with Julia 1.1.1 and it needs the packages below: 
+
 (They are presented with used versions.)
 
  - FileIO (v1.0.7)
