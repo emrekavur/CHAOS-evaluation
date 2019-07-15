@@ -9,7 +9,7 @@ This repo contains evaluation metrics of CHAOS challenge. The evaluation metrics
 
 For further information about metrics, you may visit [https://chaos.grand-challenge.org/Evaluation/](https://chaos.grand-challenge.org/Evaluation/)
 
-The evaluation code is shared with sample submission. Evaluation of CHAOS is handled via MATLAB language. In addition, Python version of the code is prepared.
+The evaluation code is shared with sample submission. Evaluation of CHAOS is handled via MATLAB language. In addition, [https://www.python.org/](Python) and [https://juliacomputing.com/](Julia) version of the code is prepared.
 
 ## Files and Folders
 We provide an example evaluation code for sample segmentation submission. Besides, we prepared a mini-experiment to compare metrics (only in MATLAB).
@@ -17,10 +17,11 @@ We provide an example evaluation code for sample segmentation submission. Beside
 |File or Folder                    |Explanation
 |----------------|-------------------------|
 |Data_3D |3D data for example evaluation|
-|Data_2D |2D data for `example2D_metric_compare.m`     |
-|Matlab\ `example3D.m`  |A sample submission evaluation code via MATLAB|
-|Matlab\ `example2D_metric_compare.m`  |A mini-experiment to compare metrics via MATLAB|
-|Python\ `example.py`  |A sample submission evaluation code via Python|
+|Data_2D |2D data for `evaluate2D_metric_compare.m`     |
+|Matlab\ `evaluate3D.m`  |A sample submission evaluation code via MATLAB|
+|Matlab\ `evaluate2D_metric_compare.m`  |A mini-experiment to compare metrics via MATLAB|
+|Python\ `evaluate3D.py`  |A sample submission evaluation code via Python|
+|Julia\ `evaluate3D.py`  |A sample submission evaluation code via Julia|
 
 ## MATLAB Version
 There are two example code.
