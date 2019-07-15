@@ -1,0 +1,7 @@
+import Pkg
+Pkg.add("FileIO")
+Pkg.add("Images")
+Pkg.add("ImageMagick")
+Pkg.add("NearestNeighbors")
+Pkg.add("LocalFilters")
+Pkg.add("DICOM")
