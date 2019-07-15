@@ -24,7 +24,7 @@ We provide an example evaluation code for sample segmentation submission. Beside
 |Julia\ `evaluate3D.jl`  |A sample submission evaluation code via Julia|
 
 ## MATLAB Version
-There are two evaluation codes.
+There are two evaluation codes. Both were written and tested with MATLAB R2018a.
 
 1) Evaluation of sample submission (`evaluate3D.m`)
 
