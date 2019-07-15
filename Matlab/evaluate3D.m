@@ -7,7 +7,7 @@
 % DICOM folder is used to transform voxel values into real world
 % coordinates. Hence, ASSD and MSSD metrics are calculated with millimeter.
 %
-% 09/07/2019 -- Ali Emre Kavur, emrekavur@gmail.com
+% 09/07/2019 -- Ali Emre Kavur, emrekavur@gmail.com 
 
 %% Directories
 ground_dir=['.' filesep '..' filesep 'Data_3D' filesep 'Ground'];
