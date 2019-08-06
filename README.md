@@ -67,11 +67,9 @@ You may install them using PyPI with the commands below:
     pip install SimpleITK
     pip install sklearn2
 
-> **Important note:** 3D erosion algorithms in *MATLAB* and *scipy.ndimage* library in Python generate slightly different results. Hence, the results of ASSD and MSSD metrics are calculated slightly different.
-
 After downloading the repo and installing necessary libraries, you may run `evaluate3D.py` file to perform the evaluation. The result will be:
 
-    DICE=0.978 RAVD=0.665 ASSD=0.713 MSSD=14
+    DICE=0.978 RAVD=0.665 ASSD=0.734 MSSD=14
     
 ## Julia Version
 Julia is a high-level, general-purpose dynamic programming language designed for high-performance numerical analysis and computational science. Since Julia is a new language, it doesn't have as many communities and libraries as Python or MATLAB. We would like to make a small contribution to Julia community because we believe that Julia will be a popular programming language in the future.  `evaluate3D.jl` and `CHAOSMetrics.jl` files are Julia implementation of `evaluate3D.m` and `CHAOSMetrics.m` files.
