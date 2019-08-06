@@ -29,10 +29,10 @@ def RAVD(Vref,Vseg):
 def SSD(Vref,Vseg,dicom_dir):  
     struct = ndimage.generate_binary_structure(3, 1)  
     
-    ref_border=Vref ^ ndimage.binary_erosion(Vref, structure=struct)
+    ref_border=Vref ^ ndimage.binary_erosion(Vref, structure=struct, border_value=1)
     ref_border_voxels=np.array(np.where(ref_border))
         
-    seg_border=Vseg ^ ndimage.binary_erosion(Vseg, structure=struct)
+    seg_border=Vseg ^ ndimage.binary_erosion(Vseg, structure=struct, border_value=1)
     seg_border_voxels=np.array(np.where(seg_border))  
     
     ref_border_voxels_real=transformToRealCoordinates(ref_border_voxels,dicom_dir)
