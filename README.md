@@ -7,7 +7,7 @@ This repo contains evaluation metrics of CHAOS challenge. The evaluation metrics
  3. Average symmetric surface distance (ASSD)
  4. Maximum symmetric surface distance (MSSD)
 
-For further information about metrics, you may visit [https://chaos.grand-challenge.org/Evaluation/](https://chaos.grand-challenge.org/Evaluation/)
+For further information about metrics and scoring system please refer to `CHAOS_Metrics_and_Evaluation_Method.pdf` file and [https://chaos.grand-challenge.org/Evaluation/](https://chaos.grand-challenge.org/Evaluation/)
 
 The evaluation code is shared with sample submission. Evaluation of CHAOS is handled via MATLAB language. In addition, [Python](https://www.python.org/) and [Julia](https://juliacomputing.com/) versions of the code are presented.
 
